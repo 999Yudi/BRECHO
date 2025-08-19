@@ -62,12 +62,11 @@
             text-decoration: underline;
         }
 
-      
         .cardg {
-            max-width: 5000px;
+            max-width: 1200px;
             margin: 60px auto; 
             background: white;
-            border-radius: 120px;
+            border-radius: 20px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.2);
             padding: 30px;
             text-align: center;
@@ -87,18 +86,18 @@
         }
 
         .card2 {
-            max-width: 5000px;
+            max-width: 1200px;
             margin: 60px auto; 
             background: white;
-            border-radius: 120px;
+            border-radius: 20px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-            padding: 300px;
+            padding: 50px;
             text-align: center;
             font-family: "Roboto Flex", sans-serif;
         }
 
         .card2 h2 {
-            margin-top: -290px;
+            margin-top: 0;
             font-family: "Bebas Neue", sans-serif;
             font-size: 2rem;
             color: rgb(0, 130, 130);
@@ -108,6 +107,54 @@
             font-size: 1rem;
             color: #333;
         }
+
+        .card3 {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .minicard {
+            position: relative;
+            background: #f9f9f9;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px 20px 20px 60px;
+            width: 300px;
+            text-align: center;
+            font-family: "Roboto Flex", sans-serif;
+            transition: transform 0.3s ease;
+        }
+
+        .mini-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .minicard .preço {
+            position: absolute;
+            top: 20px;
+            left: 15px;
+            color: red;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .minicard h3 {
+            margin: 10px 0 5px;
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 1.8rem;
+            color: rgb(0, 130, 130);
+        }
+
+        .minicard p {
+            margin: 0;
+            font-size: 1rem;
+            color: #333;
+            font-weight: bold;
+        }
+
     </style>
 </head>
 
@@ -115,7 +162,7 @@
 
     <header class="header">
         <div class="logo-title">
-            <img src="c:\Users\aluno\Downloads\ChatGPT Image 18 de ago. de 2025, 15_16_18.png" alt="logo">
+            <img src="https://i.ibb.co/G4xsBLZn/71d960a7-cb4d-4b58-b451-ed30a5db381e-1.png" alt="logo">
             <h1>Swag Y2K</h1>
         </div>
 
@@ -130,17 +177,35 @@
 
     <div class="cardg">
         <h2>Bem-vindo à Swag Y2K</h2>
-
         <p>Confira as últimas tendências da moda e aproveite nossas ofertas exclusivas.</p>
+
+        <div class="card2">
+            <h2>Várias ofertas imperdíveis!</h2>
+            <p>Aqui você encontrará várias variedades de roupas no estilo Y2K</p>
+
+            <div class="card3">
+                <div class="minicard">
+                    <div class="preço">1000$</div>
+                    <h3>Roupa</h3>
+                    <p>1000$</p>
+                    <img src="">
+                </div>
+
+                <div class="minicard">
+                    <div class="preço">1000$</div>
+                    <h3>Roupa</h3>
+                    <p>1000$</p>
+                    <img src="">
+                </div>
+
+                <div class="minicard">
+                    <div class="preço">1000$</div>
+                    <h3>Roupa</h3>
+                    <p>1000$</p>
+                    <img src="">
+                </div>
+            </div>
+        </div>
     </div>
-
-    <div class="card2">
-        <h2>Varias ofertas imperdíveis!</h2>
-     alt="adicionar imagens das roupas e criar os cards"
-
-        <p>Aqui voce encontrara varias variedades de roupas no estilo Y2K</p>
-    </div>
-
-    <button> </button>
 </body>
 </html>
