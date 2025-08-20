@@ -1,1 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Pedido</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: aliceblue;
+            margin: 0;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: rgb(0, 130, 130);
+            color: white;
+            box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .logo-title {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-title img {
+            height: 80px;
+            width: auto;
+        }
+
+        .logo-title h1 {
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 2.5rem;
+            font-weight: 400;
+            margin: 0;
+        }
+
+        .opcoes {
+            display: flex;
+            gap: 30px;
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 1.5rem;
+        }
+
+        .opcoes a {
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .opcoes a:hover {
+            text-decoration: underline;
+        }
+
+
+        .checkout-container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+        }
+
+        .order-summary {
+            border-bottom: 2px solid #ddd;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+        }
+
+        .order-summary h2 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .order-summary ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .order-summary li {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 0;
+        }
+
+        .total {
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        .payment-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .payment-form label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .payment-btn {
+            background-color: teal;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .payment-btn:hover {
+            background-color: darkcyan;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo-title">
+            <img src="c:\Users\aluno\Downloads\ChatGPT Image 18 de ago. de 2025, 15_16_18.png" alt="logo">
+            <h1>Swag Y2K</h1>
+        </div>
+
+        <nav class="opcoes">
+            <a href="#">Blusas</a>
+            <a href="#">Moletom</a>
+            <a href="#">Calça</a>
+            <a href="#">Tênis</a>
+        </nav>
+    </header>
+
+    <div class="checkout-container">
+        <h1>Finalizar Pedido</h1>
+
+        <div class="order-summary">
+            <h2>Resumo do Pedido</h2>
+            <ul>
+                <li><span>Blusa Y2K</span> <span>R$ 120,00</span></li>
+                <li><span>Calça Cargo</span> <span>R$ 150,00</span></li>
+                <li><span>Tênis Branco</span> <span>R$ 200,00</span></li>
+            </ul>
+            <p class="total">Total: R$ 470,00</p>
+        </div>
+
+        <a href="confirmação.html">
+            <button type="submit" class="payment-btn">Confirmar Pagamento</button>
+        </a>
+
+</body>
+
+</html>
