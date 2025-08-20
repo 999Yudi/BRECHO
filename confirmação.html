@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmação</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: aliceblue;
+            margin: 0;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: rgb(0, 130, 130);
+            color: rgb(255, 255, 255);
+            box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .logo-title {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-title img {
+            height: 80px;
+            width: auto;
+        }
+
+        .logo-title h1 {
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 2.5rem;
+            font-weight: 400;
+            margin: 0;
+        }
+
+        .opcoes {
+            display: flex;
+            gap: 30px;
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 1.5rem;
+        }
+
+        .opcoes a {
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .opcoes a:hover {
+            text-decoration: underline;
+        }
+
+
+        .container {
+            text-align: center;
+            max-width: 500px;
+            padding: 20px;
+            justify-content: center;
+        }
+
+        .checkmark {
+            font-size: 60px;
+            color: #000;
+        }
+
+        h2 {
+            margin: 15px 0 5px;
+            font-size: 24px;
+        }
+
+        p {
+            margin: 5px 0 20px;
+            color: #555;
+        }
+
+        .qr-code {
+            margin: 20px 0;
+        }
+
+        .pix-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            padding: 10px;
+            margin: 15px 0;
+        }
+
+        .pix-code {
+            flex: 1;
+            border: none;
+            font-size: 14px;
+            outline: none;
+            color: #333;
+        }
+
+        .copy-btn {
+            background: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .instructions {
+            font-size: 14px;
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .instructions li {
+            margin-bottom: 5px;
+        }
+
+        .note {
+            margin-top: 15px;
+            font-size: 13px;
+            color: #555;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo-title">
+            <img src="c:\Users\aluno\Downloads\ChatGPT Image 18 de ago. de 2025, 15_16_18.png" alt="logo">
+            <h1>Swag Y2K</h1>
+        </div>
+
+        <nav class="opcoes">
+            <a href="#">Blusas</a>
+            <a href="#">Moletom</a>
+            <a href="#">Calça</a>
+            <a href="#">Tênis</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Pedido realizado com sucesso</h2>
+        <p>Estamos quase lá! Finalize o pagamento.</p>
+
+        <div class="qr-code">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=00020101021226830014br.gov.bcb.pix"
+                alt="QR Code Pix">
+        </div>
+
+        <div class="pix-box">
+            <input type="text" class="pix-code" id="pixCode" value="00020101021226830014br.gov.bcb.pix" readonly>
+            <button class="copy-btn" onclick="copyPix()">Copiar Código</button>
+        </div>
+
+        <ul class="instructions">
+            <li>Acesse o aplicativo do seu banco</li>
+            <li>Escolha pagar com Pix Copia e Cola</li>
+            <li>Copie e cole o código e confirme o pagamento</li>
+        </ul>
+
+        <div class="note">
+            ⚠️ Este código tem validade de 1 hora.<br>
+            Assim que realizar o pagamento, o pedido será aprovado e você receberá um e-mail de confirmação.
+        </div>
+    </div>
+
+</body>
+
+</html>
