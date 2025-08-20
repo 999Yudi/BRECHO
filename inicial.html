@@ -121,14 +121,14 @@
             background: #f9f9f9;
             border-radius: 15px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            padding: 20px 20px 20px 60px;
+            padding: 20px 20px 20px 20px;
             width: 300px;
             text-align: center;
             font-family: "Roboto Flex", sans-serif;
             transition: transform 0.3s ease;
         }
 
-        .mini-card:hover {
+        .minicard:hover {
             transform: translateY(-5px);
         }
 
@@ -149,12 +149,19 @@
         }
 
         .minicard p {
-            margin: 0;
+            margin: 0 0 10px 0;
             font-size: 1rem;
             color: #333;
             font-weight: bold;
         }
 
+        .minicard img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover; 
+            border-radius: 10px;
+            display: block;
+        }
     </style>
 </head>
 
@@ -186,23 +193,23 @@
             <div class="card3">
                 <div class="minicard">
                     <div class="preço">1000$</div>
-                    <h3>Roupa</h3>
-                    <p>1000$</p>
-                    <img src="">
+                    <h3>Tenis</h3>
+                    <p>200$</p>
+                    <img src="https://i.ibb.co/JW0T4msn/14b0c3f8013760928c0cd41a36f0b29f.jpg">
                 </div>
 
                 <div class="minicard">
                     <div class="preço">1000$</div>
-                    <h3>Roupa</h3>
-                    <p>1000$</p>
-                    <img src="">
+                    <h3>Blusa</h3>
+                    <p>200$</p>
+                    <img src="https://i.ibb.co/23GMw5z0/65e5ba36fd1bbffe879253efa9cf4080.jpg">
                 </div>
 
                 <div class="minicard">
                     <div class="preço">1000$</div>
-                    <h3>Roupa</h3>
-                    <p>1000$</p>
-                    <img src="">
+                    <h3>Calça</h3>
+                    <p>300$</p>
+                    <img src="https://i.ibb.co/j2PJ139/663d510c8cc2127fb6d4a85f38b7b93e.jpg">
                 </div>
             </div>
         </div>
