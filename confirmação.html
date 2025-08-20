@@ -10,6 +10,9 @@
             font-family: 'Courier New', Courier, monospace;
             background-color: aliceblue;
             margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
 
         .header {
@@ -57,17 +60,16 @@
             text-decoration: underline;
         }
 
-
         .container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             text-align: center;
             max-width: 500px;
             padding: 20px;
-            justify-content: center;
-        }
-
-        .checkmark {
-            font-size: 60px;
-            color: #000;
+            margin: 0 auto;
         }
 
         h2 {
@@ -81,53 +83,32 @@
         }
 
         .qr-code {
-            margin: 20px 0;
+            margin: 10px 0;
         }
 
-        .pix-box {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-            padding: 10px;
-            margin: 15px 0;
+
+        .qr-code img {
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
         }
 
-        .pix-code {
-            flex: 1;
-            border: none;
-            font-size: 14px;
-            outline: none;
-            color: #333;
-        }
-
-        .copy-btn {
-            background: #007bff;
-            color: #fff;
-            border: none;
-            padding: 10px 15px;
-            border-radius: 6px;
-            cursor: pointer;
-        }
-
-        .instructions {
+        .instruçao {
             font-size: 14px;
             text-align: left;
             margin-top: 20px;
         }
 
-        .instructions li {
+        .instruçao li {
             margin-bottom: 5px;
         }
 
-        .note {
+        .nota {
             margin-top: 15px;
             font-size: 13px;
             color: #555;
         }
     </style>
-
 </head>
 
 <body>
@@ -151,22 +132,15 @@
         <p>Estamos quase lá! Finalize o pagamento.</p>
 
         <div class="qr-code">
-            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=00020101021226830014br.gov.bcb.pix"
-                alt="QR Code Pix">
+            <img src="https://i.ibb.co/46cgNqW/cd7b6bce-4443-4c76-977b-166798ae7a96.jpg" alt="QR Code Pix">
         </div>
 
-        <div class="pix-box">
-            <input type="text" class="pix-code" id="pixCode" value="00020101021226830014br.gov.bcb.pix" readonly>
-            <button class="copy-btn" onclick="copyPix()">Copiar Código</button>
-        </div>
-
-        <ul class="instructions">
+        <ul class="instruçao">
             <li>Acesse o aplicativo do seu banco</li>
             <li>Escolha pagar com Pix Copia e Cola</li>
-            <li>Copie e cole o código e confirme o pagamento</li>
         </ul>
 
-        <div class="note">
+        <div class="nota">
             ⚠️ Este código tem validade de 1 hora.<br>
             Assim que realizar o pagamento, o pedido será aprovado e você receberá um e-mail de confirmação.
         </div>
