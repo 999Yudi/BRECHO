@@ -1,1 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrossel Simples</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: aliceblue;
+            margin: 0;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: rgb(0, 130, 130);
+            color: white;
+            box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .logo-title {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-title img {
+            height: 80px;
+            width: auto;
+        }
+
+        .logo-title h1 {
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 2.5rem;
+            font-weight: 400;
+            margin: 0;
+        }
+
+        .opcoes {
+            display: flex;
+            gap: 30px;
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 1.5rem;
+        }
+
+        .opcoes a {
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .opcoes a:hover {
+            text-decoration: underline;
+        }
+
+        /* ==== CARROSSEL ==== */
+        .carousel {
+            width: 80%;
+            margin: 20px auto;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+            background: none;
+        }
+
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-slide {
+            min-width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .carousel-slide img {
+            width: 70%;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        /* ==== BOTÕES DE NAVEGAÇÃO ==== */
+        .carousel-buttons {
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            padding: 0 10px;
+            transform: translateY(-50%);
+            pointer-events: none;
+        }
+
+        .carousel-button {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            font-size: 2rem;
+            border: none;
+            padding: 15px 20px;
+            cursor: pointer;
+            pointer-events: all;
+            border-radius: 50%;
+            transition: 0.3s;
+        }
+
+        .carousel-button:hover {
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        /* ==== INDICADORES (escondidos) ==== */
+        .carousel-indicators {
+            display: none;
+        }
+
+        /* ==== SLIDES ==== */
+        input[type="radio"] {
+            display: none;
+        }
+
+        input#slide1:checked~.carousel-track {
+            transform: translateX(0);
+        }
+
+        input#slide2:checked~.carousel-track {
+            transform: translateX(-100%);
+        }
+
+        input#slide3:checked~.carousel-track {
+            transform: translateX(-200%);
+        }
+
+        /* ==== MOSTRAR BOTÕES CORRETOS POR SLIDE ==== */
+        .buttons-slide {
+            display: none;
+        }
+
+        #slide1:checked~.carousel-buttons .for-slide1 {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        #slide2:checked~.carousel-buttons .for-slide2 {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        #slide3:checked~.carousel-buttons .for-slide3 {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .cardg {
+            max-width: 900px;
+            margin: 60px auto;
+            background: white;
+            border-radius: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            padding: 40px;
+            text-align: center;
+            font-family: "Roboto Flex", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo-title">
+            <img src="c:\Users\aluno\Downloads\ChatGPT Image 18 de ago. de 2025, 15_16_18.png" alt="logo">
+            <h1>Swag Y2K</h1>
+        </div>
+
+        <nav class="opcoes">
+            <a href="blusas.html">Blusas</a>
+            <a href="moletom.html">Moletom</a>
+            <a href="calça.html">Calça</a>
+            <a href="tenis.html">Tênis</a>
+        </nav>
+    </header>
+
+    <div class="cardg">
+
+        <h1>Alguns modelos de nossa marca:</h1>
+
+        <div class="carousel">
+            <input type="radio" name="carousel" id="slide1" checked>
+            <input type="radio" name="carousel" id="slide2">
+            <input type="radio" name="carousel" id="slide3">
+
+            <div class="carousel-track">
+                <div class="carousel-slide">
+                    <img src="https://i.ibb.co/gLHDn2zv/modelo-swag.png" alt="modelo-swag">
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://i.ibb.co/SwYS7HQP/Image.png" alt="modelo2-swag">
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://i.ibb.co/ymRZC99T/Image.png" alt="modelo3-swag">
+                </div>
+            </div>
+
+            <!-- Botões laterais -->
+            <div class="carousel-buttons">
+                <!-- Slide 1 -->
+                <div class="buttons-slide for-slide1">
+                    <label for="slide3" class="carousel-button">&#10094;</label>
+                    <label for="slide2" class="carousel-button">&#10095;</label>
+                </div>
+                <!-- Slide 2 -->
+                <div class="buttons-slide for-slide2">
+                    <label for="slide1" class="carousel-button">&#10094;</label>
+                    <label for="slide3" class="carousel-button">&#10095;</label>
+                </div>
+                <!-- Slide 3 -->
+                <div class="buttons-slide for-slide3">
+                    <label for="slide2" class="carousel-button">&#10094;</label>
+                    <label for="slide1" class="carousel-button">&#10095;</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
