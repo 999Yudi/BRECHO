@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmação</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: aliceblue;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: rgb(0, 130, 130);
+            color: rgb(255, 255, 255);
+            box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .logo-title {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-title img {
+            height: 80px;
+            width: auto;
+        }
+
+        .logo-title h1 {
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 2.5rem;
+            font-weight: 400;
+            margin: 0;
+        }
+
+        .opcoes {
+            display: flex;
+            gap: 30px;
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 1.5rem;
+        }
+
+        .opcoes a {
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .opcoes a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            max-width: 500px;
+            padding: 20px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            margin: 15px 0 5px;
+            font-size: 24px;
+        }
+
+        p {
+            margin: 5px 0 20px;
+            color: #555;
+        }
+
+        .qr-code {
+            margin: 10px 0;
+        }
+
+
+        .qr-code img {
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+        }
+
+        .instruçao {
+            font-size: 14px;
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .instruçao li {
+            margin-bottom: 5px;
+        }
+
+        .nota {
+            margin-top: 15px;
+            font-size: 13px;
+            color: #555;
+        }
+
+        .setas {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            gap: 10px;
+            z-index: 10;
+        }
+
+        .seta {
+            background-color: rgb(0, 130, 130);
+            color: white;
+            border: none;
+            font-size: 28px;
+            padding: 10px 14px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="setas">
+        <a href="assuntosite.html"> <button class="seta">?</button> </a>
+    </div>
+
+    <header class="header">
+        <div class="logo-title">
+            <a href="inicial.html">
+                <img src="https://i.ibb.co/Cp3J59bQ/image-removebg-preview.png" alt="image-removebg-preview"></a>
+            <h1>Swag Y2K</h1>
+        </div>
+
+        <nav class="opcoes">
+            <a href="blusas.html">Blusas</a>
+            <a href="moletom.html">Moletom</a>
+            <a href="calças.html">Calça</a>
+            <a href="tenis.html">Tênis</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Pedido realizado com sucesso</h2>
+        <p>Estamos quase lá! Finalize o pagamento.</p>
+
+        <div class="qr-code">
+            <img src="https://i.ibb.co/46cgNqW/cd7b6bce-4443-4c76-977b-166798ae7a96.jpg" alt="QR Code Pix">
+        </div>
+
+        <ul class="instruçao">
+            <li>Acesse o aplicativo do seu banco</li>
+            <li>Escolha pagar com Pix Copia e Cola</li>
+        </ul>
+
+        <div class="nota">
+            ⚠️ Este código tem validade de 1 hora.<br>
+            Assim que realizar o pagamento, o pedido será aprovado e você receberá um e-mail de confirmação.
+        </div>
+    </div>
+
+</body>
+
+</html>

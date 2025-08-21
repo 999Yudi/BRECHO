@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+        rel="stylesheet">
+    <title>Swag Y2K</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: aliceblue;
+            margin: 0;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: rgb(0, 130, 130);
+            color: white;
+            box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .logo-title {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-title img {
+            height: 80px;
+            width: auto;
+        }
+
+        .logo-title h1 {
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 2.5rem;
+            font-weight: 400;
+            margin: 0;
+        }
+
+        .opcoes {
+            display: flex;
+            gap: 30px;
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 1.5rem;
+        }
+
+        .opcoes a {
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .opcoes a:hover {
+            text-decoration: underline;
+        }
+
+        .setas {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            gap: 10px;
+            z-index: 10;
+        }
+
+        .seta {
+            background-color: rgb(0, 130, 130);
+            color: white;
+            border: none;
+            font-size: 28px;
+            padding: 10px 14px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="setas">
+        <a href="assuntosite.html"> <button class="seta">?</button> </a>
+    </div>
+
+    <header class="header">
+        <div class="logo-title">
+            <a href="inicial.html">
+                <img src="https://i.ibb.co/Cp3J59bQ/image-removebg-preview.png" alt="image-removebg-preview"></a>
+            <h1>Swag Y2K</h1>
+        </div>
+        <nav class="opcoes">
+            <a href="blusas.html">Blusas</a>
+            <a href="moletom.html">Moletom</a>
+            <a href="calças.html">Calça</a>
+            <a href="tenis.html">Tênis</a>
+        </nav>
+    </header>
+</body>
+
+</html>

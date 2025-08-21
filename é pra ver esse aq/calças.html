@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+        rel="stylesheet">
+    <title>calça.html</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: aliceblue;
+            margin: 0;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: rgb(0, 130, 130);
+            color: white;
+            box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .logo-title {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-title img {
+            height: 80px;
+            width: auto;
+        }
+
+        .logo-title h1 {
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 2.5rem;
+            font-weight: 400;
+            margin: 0;
+        }
+
+        .opcoes {
+            display: flex;
+            gap: 30px;
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 1.5rem;
+        }
+
+        .opcoes a {
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .opcoes a:hover {
+            text-decoration: underline;
+        }
+
+        .cardg {
+            max-width: 1000px;
+            margin: 60px auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            padding: 40px;
+            text-align: center;
+            font-family: "Roboto Flex", sans-serif;
+        }
+
+        .cardg h2 {
+            margin-top: 0%;
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 2rem;
+            color: rgb(0, 130, 130);
+            margin-bottom: 30px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .carditem {
+            background-color: aliceblue;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            color: #333;
+            font-family: "Roboto Flex", sans-serif;
+            transition: transform 0.3s;
+            text-align: center;
+        }
+
+        .carditem:hover {
+            transform: scale(1.05);
+        }
+
+
+        .carditem img {
+            display: block;
+            margin: 0 auto;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .setas {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            gap: 10px;
+            z-index: 10;
+        }
+
+        .seta {
+            background-color: rgb(0, 130, 130);
+            color: white;
+            border: none;
+            font-size: 28px;
+            padding: 10px 14px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="setas">
+        <a href="assuntosite.html"> <button class="seta">?</button> </a>
+    </div>
+
+    <header class="header">
+        <div class="logo-title">
+            <a href="inicial.html">
+                <img src="https://i.ibb.co/Cp3J59bQ/image-removebg-preview.png" alt="image-removebg-preview"></a>
+            <h1>Swag Y2K</h1>
+        </div>
+
+        <nav class="opcoes">
+            <a href="blusas.html">Blusas</a>
+            <a href="moletom.html">Moletom</a>
+            <a href="calças.html">Calça</a>
+            <a href="tenis.html">Tênis</a>
+        </nav>
+    </header>
+
+    <div class="cardg">
+        <h2>Calça</h2>
+        <div class="cards">
+            <div class="carditem">
+                <h1> Calça jeans</h1>
+                <img src="https://i.ibb.co/DPypc280/33cc25eb61e8ba4cb4b9e03c77568711.jpg">
+                <p>100R$</p>
+            </div>
+            <div class="carditem">
+                <h1>Calça Anjos</h1>
+                <img src="https://i.ibb.co/Fqs6hXYT/747f6d43d422fa2b5922527fb68dc44c.jpg">
+                <p>200$R$</p>
+            </div>
+            <div class="carditem">
+                <h1>Short jeans</h1>
+                <img src="https://i.ibb.co/LXqvCYFL/af8391742bbcc12d42cc4742ed1cdaa4.jpg">
+                <p>400R$</p>
+            </div>
+            <div class="carditem">
+                <h1>Calça estrelas</h1>
+                <img src="https://i.ibb.co/D6YX5Ry/95ae36b61a7e45b36a72f7e1f4e9663c.jpg">
+                <p>100R$</p>
+            </div>
+            <div class="carditem">
+                <h1>Calça morte</h1>
+                <img src="https://i.ibb.co/Y7BFQ66g/bf2c2af4edb62969d16c3b33395da277.jpg">
+                <p>200R$</p>
+            </div>
+            <div class="carditem">
+                <h1>Caça Freestyle</h1>
+                <img src="https://i.ibb.co/j2PJ139/663d510c8cc2127fb6d4a85f38b7b93e.jpg">
+                <p>300R$</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
