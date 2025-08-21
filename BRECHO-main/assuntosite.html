@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+        rel="stylesheet">
+    <title>assunto.html</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: aliceblue;
+            margin: 0;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: rgb(0, 130, 130);
+            color: white;
+            box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .logo-title {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-title img {
+            height: 80px;
+            width: auto;
+        }
+
+        .logo-title h1 {
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 2.5rem;
+            font-weight: 400;
+            margin: 0;
+            color: white;
+        }
+
+        .opcoes {
+            display: flex;
+            gap: 30px;
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 1.5rem;
+        }
+
+        .opcoes a {
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .opcoes a:hover {
+            text-decoration: underline;
+        }
+
+        .cardg {
+            max-width: 900px;
+            margin: 60px auto;
+            background: white;
+            border-radius: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            padding: 40px;
+            text-align: center;
+            font-family: "Roboto Flex", sans-serif;
+        }
+
+        .cardg h2 {
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 2rem;
+            color: rgb(0, 130, 130);
+        }
+
+        .cardg p {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .cardg img {
+            max-width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .setas {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            gap: 10px;
+            z-index: 10;
+        }
+
+        .seta {
+            background-color: rgb(0, 130, 130);
+            color: white;
+            border: none;
+            font-size: 28px;
+            padding: 10px 14px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="setas">
+        <a href="funcionalidade.html"> <button class="seta">?</button> </a>
+    </div>
+
+    <header class="header">
+        <div class="logo-title">
+            <a href="inicial.html">
+                <img src="https://i.ibb.co/Cp3J59bQ/image-removebg-preview.png" alt="image-removebg-preview"></a>
+            <h1>Swag Y2K</h1>
+        </div>
+
+        <nav class="opcoes">
+            <a href="blusas.html">Blusas</a>
+            <a href="moletom.html">Moletom</a>
+            <a href="calça.html">Calça</a>
+            <a href="tenis.html">Tênis</a>
+        </nav>
+    </header>
+
+    <div class="cardg">
+        <h2>Como o nosso site funciona?</h2>
+        <p>
+            Um site de roupa Y2K com visual vibrante e nostálgico, trazendo peças cheias de brilho, cores neon, estampas
+            divertidas e cortes ousados inspirados nos anos 2000. O design do site é moderno, com navegação simples,
+            imagens chamativas e foco em tendências retrô que misturam streetwear e estilo futurista.
+        </p>
+
+        <img src="https://i.ibb.co/k2kdW6z5/sua-imagem.png" alt="Loja Swag Y2K">
+    </div>
+
+</body>
+
+</html>
